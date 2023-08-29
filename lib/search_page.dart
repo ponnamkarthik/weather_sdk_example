@@ -20,6 +20,7 @@ class _SearchPageState extends State<SearchPage> {
   bool _loading = false;
 
   void _performSearch() {
+
     final query = _searchController.text.trim();
     if (query.isNotEmpty) {
       _debounce?.cancel(); // Cancel the previous debounce if any
